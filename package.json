@@ -5,7 +5,7 @@
     "last 2 versions"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist && rm -rf node_modules && rm -rf yarn.lock",
     "webpack": "webpack",
     "parcel": "parcel build ./index.html",
     "vite": "tsc && vite build"

@@ -21,9 +21,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
-    - run: yarn webpack
-    - run: yarn parcel
-    - run: yarn vite
+    - run: yarn run webpack
+    - run: yarn run clean
+    - run: yarn install
+    - run: yarn run parcel
+    - run: yarn run clean
+    - run: yarn install
+    - run: yarn run vite
     
   all:
     # This dummy job depends on all the mandatory checks. It succeeds if and only if all CI checks
