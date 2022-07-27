@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 17.x, 18.x]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -21,10 +21,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
-    - run: yarn run webpack
+    - run: yarn run parcel
     - run: yarn run clean
     - run: yarn install
-    - run: yarn run parcel
+    - run: yarn run webpack
     - run: yarn run clean
     - run: yarn install
     - run: yarn run vite
