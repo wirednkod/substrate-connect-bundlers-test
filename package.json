@@ -30,6 +30,6 @@
     "webpack-dev-server": "^4.8.0"
   },
   "dependencies": {
-    "@substrate/connect": "0.7.9"
+    "@substrate/connect": "0.7.5"
   }
 }
