@@ -6,10 +6,9 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
-    "testBuild": "yarn run clean && yarn run webpack && yarn run parcel && yarn run vite",
-    "webpack": "yarn run clean && webpack",
-    "parcel": "yarn run clean && parcel build ./index.html",
-    "vite": "yarn run clean && tsc && vite build"
+    "webpack": "webpack",
+    "parcel": "parcel build ./index.html",
+    "vite": "tsc && vite build"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
