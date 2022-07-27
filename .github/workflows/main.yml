@@ -22,11 +22,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
     - run: yarn run parcel
-    - run: yarn run clean
-    - run: yarn install
     - run: yarn run webpack
-    - run: yarn run clean
-    - run: yarn install
     - run: yarn run vite
     
   all:
